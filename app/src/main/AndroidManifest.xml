@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GithubAppUser">
-        <activity android:name=".UserDetailActivity"></activity>
+        <activity android:name=".UserDetailActivity"
+            android:label="User">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.SplashScreen">
